@@ -1,0 +1,24 @@
+
+<div >
+<form action="/user/create" method="POST" class="container form-signin " >
+<h2 class="form-signin-heading" style="position:center;margin-left:36%;">create a user</h2>
+
+<div class="control-group">
+<label for="name" >name :</label>
+<input type="text" class="form-control" name="name" placeholder="insert ur name" ><br/>
+</div>
+
+<div class="control-group">
+<label for="email"  >email :</label>
+<input type="text" class="form-control" name="email" placeholder="insert ur email"><br/>
+
+</div>
+<div class="control-group">
+<label for="password"  >password :</label>
+<input type="password" class="form-control" name="password" placeholder="insert ur password"><br/>
+</div>
+
+<input type="submit" value="create" class="btn btn-lg btn-block btn-primary"  style="background-color:green;border-radius:13%;">
+  <input type="hidden" name="_csrf" value="<%= _csrf %>" />
+</form>
+</div>
